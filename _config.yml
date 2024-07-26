@@ -1,9 +1,7 @@
-remote-theme: LIYunzhe1408/academic-website-template
-
 # Site settings
-title: Yunzhe Li
-#email: richard@university.edu
-description: Master in Robotics at UC Berkeley
+title: Richard Feynman
+email: richard@university.edu
+description: Academic webpage of Dr. Richard Feynman
 baseurl: ""
 url: ""
 
