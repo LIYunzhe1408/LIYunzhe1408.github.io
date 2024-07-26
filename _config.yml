@@ -1,5 +1,5 @@
+remote-theme: LIYunzhe1408/academic-website-template
+
 title: Yunzhe Li
-logo: /assets/img/avator.png
+# logo: /assets/img/avator.png
 description: Master in Robotics at UC Berkeley
-show_downloads: true
-theme: jekyll-theme-minimal
