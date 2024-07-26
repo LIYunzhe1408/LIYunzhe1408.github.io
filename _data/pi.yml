@@ -1,8 +1,10 @@
 - name: Yunzhe Li
   photo: headshot.jpg
-#  info: Richard C. Tolman Professor, California Institute of Technology
+  info: Master in Robotics at UC Berkeley
   email: richard@university.edu
   github: https://github.com/LIYunzhe1408
+  youtube: https://www.youtube.com/channel/UCXSKdwpeJzKQDpbIJz_umxA
+  linkedin: https://www.linkedin.com/in/yunzhe-l-991638151/
 #  researchgate: https://www.researchgate.net/
 #  scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
 #  cv: cv/cv.pdf
@@ -14,4 +16,4 @@
     ]
 
   educationshort:
-    ["(Present) M.ENG EECS, UC Berkeley", "(2024) B.ENG CS, SHU"]
+    ["Current EECS Master, UC Berkeley", "Bachelor in CS, SHU(2024)"]

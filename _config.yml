@@ -13,7 +13,7 @@ url: ""
 # Footer info
 affiliation: >
   Yunzhe Li<br/>
-  Master in Robotics at UC Berkeley<br/>
+  FIRST, RoboMaster Alumni<br/>
   University of California, Berkeley
 
 location: >
@@ -27,7 +27,7 @@ contact: >
 
 # Pages shown in navbar
 nav_pages:
-  - name: about
+#  - name: about
 #  - name: publications
 #  - name: talks
 #  - name: research
