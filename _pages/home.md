@@ -7,7 +7,7 @@ permalink: /
 
 ### About me
 
-<iframe width="560" height="315" src="https://youtu.be/REICVFIxuHA?si=a6rtqcCN615uf7Bc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="430" height="265" src="https://www.youtube.com/embed/REICVFIxuHA?si=a6rtqcCN615uf7Bc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 Yunzhe Li is the Team Leader of SRM competing for RoboMaster at Shanghai University, and alumni of FIRST® and RoboMaster. He served as the Team Leader of FTC 1408-Facing The Giants at Shanghai Xinzhuang Senior High School from 2017-2020.
