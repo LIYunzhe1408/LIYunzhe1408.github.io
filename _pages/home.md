@@ -7,6 +7,9 @@ permalink: /
 
 ### About me
 
+<iframe width="560" height="315" src="https://youtu.be/REICVFIxuHA?si=a6rtqcCN615uf7Bc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 Yunzhe Li is the Team Leader of SRM competing for RoboMaster at Shanghai University, and alumni of FIRST® and RoboMaster. He served as the Team Leader of FTC 1408-Facing The Giants at Shanghai Xinzhuang Senior High School from 2017-2020.
 
 Yunzhe Li is a passionate robotics practitioner with diverse experience in robotics competitions, researches on Machine Learning within NASICON, computer vision applications of industrial robots and machine learning practical applications. His research interests in robotics fixates on manipulation and recognition, especially for advanced abilities in complex environments, to empower robots to collaborate with human more efficiently in hazardous tasks like earthquake salvation and deep sea expedition. In addition to his technical contributions, he is a regional leading voice for inspiring young generations to better explore the world with STEM and to transform our culture by creating a global community where science and technology are celebrated.

@@ -1,6 +1,8 @@
-- date: 1 January, 1941
-  headline: "Example news here"
+- date: Present
+  headline: "Working on OpenCV projects. Catch up at <a href=\"https://github.com/LIYunzhe1408/Opensourced-Notes-SWE-MLE-JobCreator/tree/main/OpenCV-Beginner/\">OpenCV for beginners</a>."
 
-- date: 1 January, 1940
-  headline: "Example news here"
+- date: 12 July, 2024
+  headline: "Completed Git and GitHub practice at <a href=\"https://coursera.org/share/6d178d997d80a078f2cca5443ba08f67\">Coursera</a>."
 
+- date: 15 June, 2024
+  headline: "I graduated from Shanghai University with a CS bachelor degree."
