@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Chung Min Kim</title>
+    <title>Jonas Yunzhe Li</title>
 
     <!-- Usual metadata. -->
     <meta charset="UTF-8" />
-    <link href="./assets/sunset_small.jpeg" rel="shortcut icon" type="image/x-icon" />
+    <link href="./assets/shark.jpg" rel="shortcut icon" type="image/x-icon" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1"
@@ -38,24 +38,24 @@
       "
     >
       <div style="flex-grow: 1; flex-basis: 20em">
-        <h1>Chung Min Kim</h1>
+        <h1>Jonas Yunzhe Li</h1>
         <p>
-            I am a third-year PhD student in at <a href="https://www.berkeley.edu/">UC Berkeley</a>, where I am advised by <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a> and <a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>. I received my dual B.S. degree in EECS (Electrical Engineering and Computer Science) and Mechanical Engineering from <a href="https://www.berkeley.edu/">UC Berkeley</a> in 2021.
-            I am currently funded by the <a href="http://www.nsfgrfp.org/">NSF GRFP</a>. 🐻
+            I'm pursing a master’s degree in the department of EECS at <a href="https://eecs.berkeley.edu/">UC Berkeley</a>, where where he is affiliated with the <a href="https://msc.berkeley.edu/">Mechanical Systems Control Lab</a>.
+            At Shanghai University, I've worked on <a href="https://www.robomaster.com/en-US">RoboMaster</a>, where I led a 40 student team developing 8 types of robots from scratch for 4 years. We won the 3 rd place in Shanghai Regional Competition. At high school, I actively participated in <a href="https://www.firstinspires.org/robotics/ftc">FIRST Tech Challenge</a> where I bent the growth of the team by winning 2 FIRST World Championship admissions, 1 Inspire Award, and 4 Connect Award in 3 years.
         </p>
         <p>
-            I am working on 3D vision and robotics in the "real-world".
+            I'm interested in the intersection of computer vision, AI, and Robotics. Most of my project is about developing robots or systems to facilitating human works through interacting with the physical world from images or texts. Some projects are <span class="highlight">highlighted</span>.
         </p>
         <p>
-          <a href="mailto:chungmin99@berkeley.edu">Email</a>
+          <a href="mailto:liyunzhe.jonas@berkeley.edu">Email</a>
           &nbsp;/&nbsp;
-          <a href="https://scholar.google.com/citations?hl=en&user=ODr5lMgAAAAJ">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/yunzhe-l-991638151/">LinkedIn</a>
           &nbsp;/&nbsp;
-          <a href="https://twitter.com/ChungMinKim">Twitter</a>
+          <a href="https://www.youtube.com/@yunzheli5359">YouTube</a>
           &nbsp;/&nbsp;
-          <a href="https://github.com/chungmin99/">Github</a>
+          <a href="https://github.com/LIYunzhe1408">Github</a>
           &nbsp;/&nbsp;
-          <a href="https://docs.google.com/document/d/12cRPLdpT7ES6IHeIp3JFJsJS0lUze8yHy-9sTsCD8AU">Resume</a>
+          <a href="https://drive.google.com/file/d/1FaS0ec23HjVUJmM7Mn1wi09pJKsCdZF6/view?usp=sharing">Resume</a>
         </p>
       </div>
       <div style="display: block">
@@ -73,13 +73,13 @@
       </div>
     </section>
     <section>
-      <h2>Research</h2>
+      <h2>Projects</h2>
 
       <p>⚙️ Under construction ⚙️</p>
 
       <!-- Paper list will be dynamically generated here -->
       <ul id="paper-list" style="margin-top: 1em" data-show-recent="false"></ul>
-      [ <a href="#" onclick="toggleRecentPapers(event)">Show older papers</a> ]
+      <!-- [ <a href="#" onclick="toggleRecentPapers(event)">Show older projects</a> ] -->
 
       <!-- Generate paper list. -->
       <script>
@@ -87,154 +87,25 @@
           {
             previewSrc: "./assets/rsrd_preview.mp4",
             title:
-              "Robot See Robot Do: Imitating Articulated Object Manipulation with Monocular 4D Reconstruction",
+              "Mobile Robots with an Auto-Aiming System",
             authors: [
-              "Justin Kerr*",
-              "Chung Min Kim*",
-              "Mingxuan Wu",
-              "Brent Yi",
-              "Qianqian Wang",
-              "Ken Goldberg",
-              "Angjoo Kanazawa",
+              "Jonas Li",
+              "Xinyu He",
+              "Jun Chen",
+              "Minfeng Tang",
+              "Zhengyu Li",
+              "Jun Jiang",
             ],
-            conference: "CoRL 2024",
+            conference: "RoboMaster 2023",
             links: [
-              { text: "Website", url: "https://robot-see-robot-do.github.io/" },
-              { text: "Paper", url: "https://arxiv.org/abs/2409.18121" },
+              { text: "Git repo", url: "https://github.com/SRM-Vision/SRM-Vision-2022" },
+              { text: "Video", url: "https://www.youtube.com/watch?v=4uyBBJRXUTg" },
             ],
             summary:
-              "Feature fields can help reconstruct, track, and retarget object motion.",
+              "Detect enemy robots by OpenCV + YOLOv7, motions are predicted by EKF and Least Square. Bullet trajectory is fitted to achieve 96% accuracy.",
             highlighted: true,
             recent: true,
             new: true,
-          },
-          {
-            previewSrc: "./assets/garfield_splash.mp4",
-            title: "GARField: Group Anything with Radiance Fields",
-            authors: [
-              "Chung Min Kim*",
-              "Mingxuan Wu*",
-              "Justin Kerr*",
-              "Ken Goldberg",
-              "Matthew Tancik",
-              "Angjoo Kanazawa",
-            ],
-            conference: "CVPR 2024",
-            links: [
-              { text: "Website", url: "https://www.garfield.studio" },
-              { text: "Paper", url: "https://arxiv.org/abs/2401.09419" },
-            ],
-            summary:
-              "Hierarchical grouping in 3D by training a scale-conditioned affinity field from multi-level masks.",
-            recent: true,
-            new: false,
-          },
-          {
-            previewSrc: "./assets/lerftogo_splash.mp4",
-            title: "LERF-TOGO: Language Embedded Radiance Fields for Zero-Shot Task-Oriented Grasping",
-            authors: [
-              "Adam Rashid*",
-              "Satvik Sharma*",
-              "Chung Min Kim",
-              "Justin Kerr",
-              "Lawrence Yunliang Chen",
-              "Angjoo Kanazawa",
-              "Ken Goldberg",
-            ],
-            conference: "CoRL 2023, Oral, Best Paper Finalist",
-            links: [
-              { text: "Website", url: "https://lerftogo.github.io/" },
-              { text: "Paper", url: "https://arxiv.org/abs/2309.07970" },
-            ],
-            summary:
-              "LERF's multi-scale semantics enables 0-shot language-conditioned part grasping for a wide variety of objects.",
-            recent: true,
-            new: false,
-          },
-          {
-            previewSrc: "./assets/lerf_splash.mp4",
-            title: "LERF: Language Embedded Radiance Fields",
-            authors: [
-              "Justin Kerr*",
-              "Chung Min Kim*",
-              "Ken Goldberg",
-              "Angjoo Kanazawa",
-              "Matthew Tancik",
-            ],
-            conference: "ICCV 2023, Oral",
-            links: [
-              { text: "Website", url: "https://lerf.io" },
-              { text: "Paper", url: "https://arxiv.org/abs/2303.09553" },
-            ],
-            summary:
-              "Grounding CLIP vectors volumetrically inside a NeRF allows flexible natural language queries in 3D.",
-            recent: true,
-            new: false,
-          },
-          {
-            previewSrc: "./assets/staxray.png",
-            title: "Mechanical Search on Shelves with Efficient Stacking and Destacking of Objects",
-            authors: [
-              "Letian Fu*",
-              "Huang Huang*",
-              "Michael Danielczuk",
-              "Chung Min Kim",
-              "Zachary Tam",
-              "Jeffrey Ichnowski",
-              "Anelia Angelova",
-              "Brian Ichter",
-              "Ken Goldberg",
-            ],
-            conference: "ISRR 2022",
-            links: [
-              { text: "arXiv", url: "https://arxiv.org/abs/2207.02347" },
-              { text: "Website", url: "https://sites.google.com/berkeley.edu/stax-ray" },
-            ],
-            summary: "Active shelf re-organization to perform search in cluttered environments.",
-            recent: false,
-            new: false,
-          },
-          {
-            previewSrc: "./assets/slaxray.jpg",
-            title: "Mechanical Search on Shelves using a Novel “Bluction” Tool",
-            authors: [
-              "Huang Huang",
-              "Michael Danielczuk",
-              "Chung Min Kim",
-              "Letian Fu",
-              "Zachary Tam",
-              "Jeffrey Ichnowski",
-              "Anelia Angelova",
-              "Brian Ichter",
-              "Ken Goldberg",
-            ],
-            conference: "ICRA 2022",
-            links: [
-              { text: "IEEE", url: "https://ieeexplore.ieee.org/document/9811622" },
-              { text: "arXiv", url: "https://arxiv.org/abs/2201.08968" },
-            ],
-            summary: "Pushing and suction actions are combined into a single tool for searching in shelf environments.",
-            recent: false,
-            new: false,
-          },
-          {
-            previewSrc: "./assets/ipc-splash.jpg",
-            title:
-              "IPC-GraspSim: Reducing the Sim2Real Gap for Parallel-Jaw Grasping with the Incremental Potential Contact Model",
-            authors: [
-              "Chung Min Kim",
-              "Michael Danielczuk",
-              "Isabella Huang",
-              "Ken Goldberg",
-            ],
-            conference: "ICRA 2022",
-            links: [
-              { text: "Website", url: "https://sites.google.com/berkeley.edu/ipcgraspsim" },
-              { text: "arXiv", url: "https://arxiv.org/abs/2111.01391" },
-            ],
-            summary: "Simulate compliance in parallel-jaw gripper tips for better grasp success prediction.",
-            recent: false,
-            new: false,
           },
         ];
         function generatePaperList() {
@@ -266,7 +137,7 @@
                     const firstName = names.slice(0, -1).join("&nbsp;");
                     const lastName = names[names.length - 1];
                     const formattedName = `${firstName}&nbsp;${lastName}`;
-                    return author.startsWith("Chung Min Kim")
+                    return author.startsWith("Jonas Li")
                       ? `<strong>${formattedName}</strong>`
                       : formattedName;
                   })
@@ -299,11 +170,50 @@
     </section>
     <section>
       <h2>Misc</h2>
-      <p> I like sunsets. Every year from Berkeley, in early November, the sun sets over the golden gate:</p>
+      <p> I love walking by the ocean, soaking in the sea breeze, and watching the sunsets. The beaches in San Diego and Berkeley always leave me feeling refreshed and inspiring.</p>
       <div style="display: block">
         <img
-          src="./assets/sunset_small.jpeg"
-          alt="A photo of a sunset over the golden gate, taken by the author"
+          src="./assets/sunset-1.jpg"
+          alt="Photos of sunsets at Berkeley and San Diego, taken by the author"
+          style="
+            width: 13em;
+            height: auto;
+            aspect-ratio: 1.5;
+            object-fit: cover;
+            border-radius: 5%;
+          "
+        />
+      </div>
+      <div style="display: block">
+        <img
+          src="./assets/sunset-2.jpg"
+          alt="Photos of sunsets at Berkeley and San Diego, taken by the author"
+          style="
+            width: 13em;
+            height: auto;
+            aspect-ratio: 1.5;
+            object-fit: cover;
+            border-radius: 5%;
+          "
+        />
+      </div>
+      <div style="display: block">
+        <img
+          src="./assets/sunset-3.jpg"
+          alt="Photos of sunsets at Berkeley and San Diego, taken by the author"
+          style="
+            width: 13em;
+            height: auto;
+            aspect-ratio: 1.5;
+            object-fit: cover;
+            border-radius: 5%;
+          "
+        />
+      </div>
+      <div style="display: block">
+        <img
+          src="./assets/sunset-4.jpg"
+          alt="Photos of sunsets at Berkeley and San Diego, taken by the author"
           style="
             width: 13em;
             height: auto;
@@ -320,6 +230,7 @@
         Website design borrows from
         <a href="https://jonbarron.info/">Jon Barron</a> and
         <a href="https://brentyi.github.io/">Brent Yi</a>.
+        Forked from <a href="https://github.com/chungmin99/">Chung Min Kim</a>.
       </em>
     </section>
     <div style="height: 2em"></div>
