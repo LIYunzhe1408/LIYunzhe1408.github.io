@@ -93,8 +93,8 @@ p {
 }
 
 #paper-list li .paper-visual {
-  width: 13em;
-  height: 9.5em;
+  width: 15em;
+  height: 10em;
   object-fit: cover;
   overflow: hidden;
   display: block;
