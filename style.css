@@ -34,7 +34,7 @@ a:hover {
 }
 
 section {
-  max-width: 55em;
+  max-width: 60em;
   margin: 0 auto 2em auto;
   padding: 0 2em;
 }
@@ -93,8 +93,8 @@ p {
 }
 
 #paper-list li .paper-visual {
-  width: 18em; /* Increased width for better visual balance */
-  height: 12em; /* Adjusted height for a more proportional aspect ratio */
+  width: 21em; /* Increased width for better visual balance */
+  height: 14em; /* Adjusted height for a more proportional aspect ratio */
   object-fit: cover;
   overflow: hidden;
   display: block;
