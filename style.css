@@ -153,3 +153,16 @@ p {
   scrollbar-width: thin;
   scrollbar-color: #aaa #f1f1f1;
 }
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.gallery img {
+  width: calc(20% - 1em);
+  height: auto;
+  object-fit: cover;
+  border-radius: 5%;
+}
