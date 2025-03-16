@@ -3,7 +3,7 @@
 /* Container for filter buttons */
 #filters {
   margin-bottom: 1em;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* Style for each filter button */
