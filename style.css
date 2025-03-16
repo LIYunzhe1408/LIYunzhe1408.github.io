@@ -1,5 +1,46 @@
 /* General styles */
 
+/* Container for filter buttons */
+#filters {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* Style for each filter button */
+#filters button {
+  background-color: #f5f5f5;
+  border: none;
+  padding: 0.5em 1.25em;
+  margin: 0.25em;
+  border-radius: 4px;
+  font-size: 1em;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+#filters button:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Active (pressed) state */
+#filters button:active {
+  background-color: #ccc;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Style for an active filter button if you want to highlight the selected one */
+#filters button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+
 body {
   font-family: Inter, sans-serif;
   color: #111;
