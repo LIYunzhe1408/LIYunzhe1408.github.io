@@ -69,17 +69,6 @@ h2 {
   padding-bottom: 0.5rem;
 }
 
-h2::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 50px;
-  height: 3px;
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
-  border-radius: 2px;
-}
-
 a:link,
 a:visited {
   color: #18d;
