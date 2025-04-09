@@ -394,30 +394,45 @@
     <section>
       <h2>My Teams and Robots</h2>
       <div class="gallery">
-        <img src="./assets/robots/FTC2018.JPG" style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-        <img src="./assets/robots/FTCWorld.jpg"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-        <img src="./assets/robots/FTCChina.JPG"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-        <img src="./assets/robots/FTC2019.JPG"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-        <img src="./assets/robots/FTC2020.jpg"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-
-        <img src="./assets/robots/SRM2022.png"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-        <img src="./assets/robots/SRM2023.jpg"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-        <img src="./assets/robots/SRM2023-2.jpg"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-        <img src="./assets/robots/SRM2024.jpg"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-        <img src="./assets/robots/RM2024.jpg"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-
-        <img src="./assets/robots/R-2017.JPG"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-        <img src="./assets/robots/R-FTC2018.jpg"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-        <img src="./assets/robots/R-FTC2019.jpg"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-        <img src="./assets/robots/R-FTC2020.jpg"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-        <img src="./assets/robots/R-FTC2021.jpg"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-
-        <img src="./assets/robots/SRM-Engineer.jpg"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-        <img src="./assets/robots/SRM-HERO.jpg"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-        <img src="./assets/robots/SRM-Sentry.jpg"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-        <img src="./assets/robots/SRM-Standard.jpg"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
-        <img src="./assets/robots/ALL.jpg"style="width: calc(20% - 1em);height: auto;aspect-ratio: 1.5;object-fit: cover;border-radius: 5%;"/>
+        <!-- Each image with onclick modal logic -->
+        <img src="./assets/robots/FTC2018.JPG" onclick="showModal('./assets/robots/FTC2018.JPG')" />
+        <img src="./assets/robots/FTCWorld.jpg" onclick="showModal('./assets/robots/FTCWorld.jpg')" />
+        <img src="./assets/robots/FTCChina.JPG" onclick="showModal('./assets/robots/FTCChina.JPG')" />
+        <img src="./assets/robots/FTC2019.JPG" onclick="showModal('./assets/robots/FTC2019.JPG')" />
+        <img src="./assets/robots/FTC2020.jpg" onclick="showModal('./assets/robots/FTC2020.jpg')" />
+        <img src="./assets/robots/SRM2022.png" onclick="showModal('./assets/robots/SRM2022.png')" />
+        <img src="./assets/robots/SRM2023.jpg" onclick="showModal('./assets/robots/SRM2023.jpg')" />
+        <img src="./assets/robots/SRM2023-2.jpg" onclick="showModal('./assets/robots/SRM2023-2.jpg')" />
+        <img src="./assets/robots/SRM2024.jpg" onclick="showModal('./assets/robots/SRM2024.jpg')" />
+        <img src="./assets/robots/RM2024.jpg" onclick="showModal('./assets/robots/RM2024.jpg')" />
+        <img src="./assets/robots/R-2017.JPG" onclick="showModal('./assets/robots/R-2017.JPG')" />
+        <img src="./assets/robots/R-FTC2018.jpg" onclick="showModal('./assets/robots/R-FTC2018.jpg')" />
+        <img src="./assets/robots/R-FTC2019.jpg" onclick="showModal('./assets/robots/R-FTC2019.jpg')" />
+        <img src="./assets/robots/R-FTC2020.jpg" onclick="showModal('./assets/robots/R-FTC2020.jpg')" />
+        <img src="./assets/robots/R-FTC2021.jpg" onclick="showModal('./assets/robots/R-FTC2021.jpg')" />
+        <img src="./assets/robots/SRM-Engineer.jpg" onclick="showModal('./assets/robots/SRM-Engineer.jpg')" />
+        <img src="./assets/robots/SRM-HERO.jpg" onclick="showModal('./assets/robots/SRM-HERO.jpg')" />
+        <img src="./assets/robots/SRM-Sentry.jpg" onclick="showModal('./assets/robots/SRM-Sentry.jpg')" />
+        <img src="./assets/robots/SRM-Standard.jpg" onclick="showModal('./assets/robots/SRM-Standard.jpg')" />
+        <img src="./assets/robots/ALL.jpg" onclick="showModal('./assets/robots/ALL.jpg')" />
       </div>
+    
+      <div id="imageModal" class="image-modal" onclick="hideModal()">
+        <img id="modalImage" src="" alt="Modal Image" />
+      </div>
+      <script>
+        function showModal(src) {
+          const modal = document.getElementById('imageModal');
+          const modalImg = document.getElementById('modalImage');
+          modalImg.src = src;
+          modal.style.display = 'block';
+        }
+      
+        function hideModal() {
+          const modal = document.getElementById('imageModal');
+          modal.style.display = 'none';
+        }
+      </script>
     </section>
     <section>
       <h2>Misc</h2>
@@ -467,7 +482,19 @@
             border-radius: 5%;
           "
         />
-      </div>      
+      </div>
+
+      <p> Bookshelf</p>
+      <div class="book-gallery">
+        <!-- <img src="./assets/books/cover-The World I See.jpg" alt="Book 1 Cover" onclick="window.open('', '_blank')" /> -->
+        <img src="./assets/books/cover-The World I See.jpg" alt="Book 1 Cover" />
+        <img src="./assets/books/cover-Outlier.jpg" alt="Book 2 Cover" />
+        <img src="./assets/books/cover-The First Minute.jpg" alt="Book 3 Cover" />
+        <img src="./assets/books/cover-Secret of Jobs.jpg" alt="Book 3 Cover" />
+        <img src="./assets/books/cover-Make It Clear.jpg" alt="Book 3 Cover"/>
+        <img src="./assets/books/cover-Gut.jpg" alt="Book 3 Cover" />
+      </div>
+      
     </section>
     <div style="height: 1em"></div>
     <section>
