@@ -97,6 +97,27 @@
       <!-- Generate paper list. -->
       <script>
         const papers = [
+          {
+            previewSrc: "./assets/Video FlexToK.mp4",
+            title:
+              "FlexTok for Video Reconstruction",
+            authors: [
+              "Zikai Liu*, Yunzhe \"Jonas\" Li*, Advait Gosai*",
+            ],
+            conference: "CS280 @UC Berkeley by Prof. Jitendra Malik & Prof. Angjoo Kanazawa, 2025",
+            
+            category: "CVR",
+            default: true,
+            links: [
+              { text: "Git repo", url: "https://github.com/LIYunzhe1408/video-tokenizer" },
+              { text: "Website", url: "https://yunzhe-li.top/video-tokenizer/" },
+            ],
+            summary:
+              "This Project extends a 1D image tokenizer to the video domain and evaluate its ability to preserve visual and temporal structure on exocentric, egocentric, and synthetic datasets across different token lengths.",
+            highlighted: false,
+            recent: true,
+            new: true,
+        },  
         {
             previewSrc: "./assets/MNIST generate.gif",
             title:
@@ -116,7 +137,7 @@
               "This project explores Flow Matching as a generative modeling technique by training a UNet-based denoiser on the MNIST dataset. The model progressively denoises images using flow matching instead of traditional diffusion models.",
             highlighted: false,
             recent: true,
-            new: true,
+            new: false,
           },  
         {
             previewSrc: "./assets/Abstract-concise.mp4",
