@@ -41,7 +41,7 @@
         <h1>Yunzhe "Jonas" Li</h1>
         <!-- <p>where I am affiliated with the <a href="https://msc.berkeley.edu/">Mechanical Systems Control Lab</a> to work on humanoid robot manipulation</p> -->
         <p>
-          I'm pursuing a master’s degree in the Department of EECS at <a href="https://eecs.berkeley.edu/">UC Berkeley</a>. I am graciously to be an alumnus of both <a href="https://www.robomaster.com/en-US">RoboMaster</a> and <a href="https://www.firstinspires.org/">FIRST</a>, and affiliated with <a href="https://www.dji.com/">DJI</a> as an event technical executive.
+          I recently earned a master’s degree in the Department of EECS at <a href="https://eecs.berkeley.edu/">UC Berkeley</a>. I am graciously to be an alumnus of both <a href="https://www.robomaster.com/en-US">RoboMaster</a> and <a href="https://www.firstinspires.org/">FIRST</a>, and affiliated with <a href="https://www.dji.com/">DJI</a> as an event technical executive.
         </p>
         <p>
           Previously, I worked as a software engineer at <a href="https://www.momenta.cn/en/">Momenta</a>, contributing to the autopilot reversing feature for GM Cadillac LYRIQ. My work involved developing a stuck-state detection benchmark for reversing maneuvers, evaluating 800+ real parking test cases across 30+ garages, and optimizing SVM-based classification to reduce false positives by 15%.
@@ -52,7 +52,7 @@
         <p>
           My interest at the intersection of computer vision, AI, and robotics was ignited in high school, where I actively participated in the <a href="https://www.firstinspires.org/robotics/ftc">FIRST Tech Challenge</a> as a team lead. We achieved 2 FIRST World Championship admissions, 1 Inspire Award, and 4 Connect Awards over 3 years.
         </p>
-        <p>Currently, I aim to explore <b>Vision-Language navigation</b> to address the limitations of vision-only models in understanding intent and natural human interaction</p>
+        <p>Currently, I aim to explore <b>Vision-Language navigation</b> to address the limitations of vision-only models in understanding intent and natural human interaction.</p>
       
         <p>
           <a href="mailto:liyunzhe.jonas@berkeley.edu">Email</a>
@@ -68,14 +68,14 @@
       </div>
       <div style="display: block">
         <img
-          src="./assets/self_portrait.jpg"
+          src="./assets/SF.jpg"
           alt="A photo of the author"
           style="
             width: 20em;
             height: auto;
             aspect-ratio: 1;
             object-fit: cover;
-            border-radius: 5%;
+            border-radius: 10%;
           "
         />
       </div>
@@ -84,9 +84,10 @@
     <section id="filters">
       <h2>Projects</h2>
       <p> "What motivates the development of AI must explicitly center on human benefit." -- Fei-Fei Li</p>
-      <button onclick="filterPapers('all')">All</button>
-      <button onclick="filterPapers('CVR')">Robotics & Computer Vision</button>
-      <button onclick="filterPapers('LLM')">LLM & ML Application</button>
+      <button data-category="featured" onclick="filterPapers('featured')">Featured</button>
+      <button data-category="all" onclick="filterPapers('all')">All</button>
+      <button data-category="CVR" onclick="filterPapers('CVR')">Robotics & Computer Vision</button>
+      <button data-category="LLM" onclick="filterPapers('LLM')">LLM & ML Application</button>
     </section>
     
     <section>
@@ -102,18 +103,18 @@
             title:
               "OptiBots: Modular Robot Design Using Genetic Algorithms",
             authors: [
-              "Jae Won Kim, Jonas Yunzhe Li, Calix Tang, Alexandra Zhang Jiang, Shankar Kailas",
+              "Jae Won Kim", "Yunzhe \"Jonas\" Li", "Calix Tang", "Alexandra Zhang Jiang", "Shankar Kailas",
             ],
             conference: "Capstone Project @ UC Berkeley, 2025",
             
             category: "CVR",
-            featured: true,
+            featured: false,
             links: [
               { text: "Git repo", url: "https://github.com/LIYunzhe1408/OptiBots" },
               { text: "Website", url: "https://yunzhe-li.top/OptiBots/" },
             ],
             summary:
-              "Instructed by Prof. Masayoshi Tomizuka, Dr. Wei Zhan, Yuxin Chen, and Chenran Li, OptiBots automates modular robot design and control using genetic algorithms and reinforcement learning, enabling fast, low-cost prototyping in simulation.",
+              "Advised by Prof. Masayoshi Tomizuka, Dr. Wei Zhan, Yuxin Chen, and Chenran Li, OptiBots automates modular robot design and control using genetic algorithms and reinforcement learning, enabling fast, low-cost prototyping in simulation.",
             highlighted: false,
             recent: true,
             new: true,
@@ -123,12 +124,12 @@
             title:
               "FlexTok for Video Reconstruction",
             authors: [
-              "Yunzhe \"Jonas\" Li, Zikai Liu, Advait Gosai",
+              "Zikai Liu*", "Yunzhe \"Jonas\" Li*", "Advait Gosai*",
             ],
             conference: "CS280 @ UC Berkeley, 2025",
             
             category: "CVR",
-            featured: true,
+            featured: false,
             links: [
               { text: "Git repo", url: "https://github.com/LIYunzhe1408/video-tokenizer" },
               { text: "Website", url: "https://yunzhe-li.top/video-tokenizer/" },
@@ -137,7 +138,7 @@
               "Instructed by Prof. Jitendra Malik & Prof. Angjoo Kanazawa, this project extends a 1D image tokenizer to the video domain and evaluate its ability to preserve visual and temporal structure on exocentric, egocentric, and synthetic datasets across different token lengths.",
             highlighted: false,
             recent: true,
-            new: true,
+            new: false,
         },  
         {
             previewSrc: "./assets/MNIST generate.gif",
@@ -146,7 +147,7 @@
             authors: [
               "Yunzhe \"Jonas\" Li",
             ],
-            conference: "Open-Source Contribution, 2025",
+            conference: "CS 280 @ UC Berkeley, 2025",
             
             category: "CVR",
             featured: true,
@@ -155,7 +156,7 @@
               { text: "Website", url: "https://yunzhe-li.top/Flow-Matching/" },
             ],
             summary:
-              "This project explores Flow Matching as a generative modeling technique by training a UNet-based denoiser on the MNIST dataset. The model progressively denoises images using flow matching instead of traditional diffusion models.",
+              "Instructed by Prof. Jitendra Malik & Prof. Angjoo Kanazawa, this project explores Flow Matching as a generative modeling technique by training a UNet-based denoiser on the MNIST dataset. The model progressively denoises images using flow matching instead of traditional diffusion models.",
             highlighted: false,
             recent: true,
             new: false,
@@ -391,10 +392,24 @@
         // Filter function for filter buttons
         function filterPapers(category) {
           generatePaperList(category);
+
+          // Remove active class from all buttons
+          const buttons = document.querySelectorAll("#filters button");
+          buttons.forEach((btn) => btn.classList.remove("active"));
+
+          // Add active class to the matching button by data-category
+          const activeBtn = Array.from(buttons).find(
+            (btn) => btn.dataset.category === category
+          );
+          if (activeBtn) {
+            activeBtn.classList.add("active");
+          }
         }
 
-        // Generate default project list on DOM load
-        document.addEventListener("DOMContentLoaded", () => generatePaperList());
+        document.addEventListener("DOMContentLoaded", () => {
+          filterPapers("featured"); // highlights "All" button and renders all papers
+        });
+
 
 
         function toggleRecentPapers(event) {
