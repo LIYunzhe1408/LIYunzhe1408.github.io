@@ -98,22 +98,43 @@
       <script>
         const papers = [
           {
+            previewSrc: "./assets/Optibots.gif",
+            title:
+              "OptiBots: Modular Robot Design Using Genetic Algorithms",
+            authors: [
+              "Jae Won Kim, Jonas Yunzhe Li, Calix Tang, Alexandra Zhang Jiang, Shankar Kailas",
+            ],
+            conference: "Capstone Project @ UC Berkeley, 2025",
+            
+            category: "CVR",
+            featured: true,
+            links: [
+              { text: "Git repo", url: "https://github.com/LIYunzhe1408/OptiBots" },
+              { text: "Website", url: "https://yunzhe-li.top/OptiBots/" },
+            ],
+            summary:
+              "Instructed by Prof. Masayoshi Tomizuka, Dr. Wei Zhan, Yuxin Chen, and Chenran Li, OptiBots automates modular robot design and control using genetic algorithms and reinforcement learning, enabling fast, low-cost prototyping in simulation.",
+            highlighted: false,
+            recent: true,
+            new: true,
+        },  
+          {
             previewSrc: "./assets/Video FlexToK.mp4",
             title:
               "FlexTok for Video Reconstruction",
             authors: [
-              "Zikai Liu*, Yunzhe \"Jonas\" Li*, Advait Gosai*",
+              "Yunzhe \"Jonas\" Li, Zikai Liu, Advait Gosai",
             ],
-            conference: "CS280 @UC Berkeley by Prof. Jitendra Malik & Prof. Angjoo Kanazawa, 2025",
+            conference: "CS280 @ UC Berkeley, 2025",
             
             category: "CVR",
-            default: true,
+            featured: true,
             links: [
               { text: "Git repo", url: "https://github.com/LIYunzhe1408/video-tokenizer" },
               { text: "Website", url: "https://yunzhe-li.top/video-tokenizer/" },
             ],
             summary:
-              "This Project extends a 1D image tokenizer to the video domain and evaluate its ability to preserve visual and temporal structure on exocentric, egocentric, and synthetic datasets across different token lengths.",
+              "Instructed by Prof. Jitendra Malik & Prof. Angjoo Kanazawa, this project extends a 1D image tokenizer to the video domain and evaluate its ability to preserve visual and temporal structure on exocentric, egocentric, and synthetic datasets across different token lengths.",
             highlighted: false,
             recent: true,
             new: true,
@@ -128,7 +149,7 @@
             conference: "Open-Source Contribution, 2025",
             
             category: "CVR",
-            default: true,
+            featured: true,
             links: [
               { text: "Git repo", url: "https://github.com/LIYunzhe1408/Flow-Matching" },
               { text: "Website", url: "https://yunzhe-li.top/Flow-Matching/" },
@@ -148,7 +169,7 @@
             ],
             conference: "Open-Source Contribution, 2025",
             category: "LLM",
-            default: false,
+            featured: false,
             links: [
               { text: "Git repo", url: "https://github.com/LIYunzhe1408/Abstract-LeetCode" },
               { text: "Video", url: "https://youtu.be/IpndzIX_nuw?si=3FaO41SYUJSazVCq" },
@@ -173,7 +194,7 @@
             ],
             conference: "LLM Agents MOOC Hackathon, Berkeley RDI, 2024",
             category: "LLM",
-            default: false,
+            featured: false,
             links: [
               { text: "Git repo", url: "https://github.com/LIYunzhe1408/MealMate" },
               { text: "Video", url: "https://youtu.be/bAT-jZhDtCw?si=r7iHjxn-TGihWYJS" },
@@ -198,7 +219,7 @@
             ],
             conference: "RoboMaster, 2023",
             category: "CVR",
-            default: true,
+            featured: true,
             links: [
               { text: "Git repo", url: "https://github.com/SRM-Vision/SRM-Vision-2022" },
               { text: "Video", url: "https://www.youtube.com/watch?v=4uyBBJRXUTg" },
@@ -224,7 +245,7 @@
             ],
             conference: "RoboMaster, 2023",
             category: "CVR",
-            default: true,
+            featured: true,
             links: [
               { text: "Video", url: "https://youtu.be/qeRvdmcNFAc?si=4-hF27Y6jXwbmtPL" },
             ],
@@ -248,7 +269,7 @@
             ],
             conference: "RoboMaster, 2022",
             category: "CVR",
-            default: true,
+            featured: true,
             links: [
               { text: "Git repo", url: "https://github.com/SRM-Vision/SRM-Vision-2022" },
               { text: "Video", url: "https://www.youtube.com/watch?v=4uyBBJRXUTg" },
@@ -279,7 +300,7 @@
             highlighted: true,
             recent: true,
             new: false,
-            default: true
+            featured: true
           },  
           {
             previewSrc: "./assets/NASICON.mp4",
@@ -304,18 +325,18 @@
             recent: true,
             new: false,
             
-            default: false,
+            featured: false,
           }, 
         ];
-        function generatePaperList(filteredCategory = 'default') {
+        function generatePaperList(filteredCategory = 'featured') {
           const paperList = document.getElementById("paper-list");
           paperList.innerHTML = ""; // clear existing list
 
           let filteredPapers = [];
 
-          if (filteredCategory === 'default') {
-            // Show only the projects marked as default
-            filteredPapers = papers.filter(paper => paper.default);
+          if (filteredCategory === 'featured') {
+            // Show only the projects marked as featured
+            filteredPapers = papers.filter(paper => paper.featured);
           } else {
             filteredPapers = papers.filter(paper => {
               return filteredCategory === 'all' || paper.category === filteredCategory;
