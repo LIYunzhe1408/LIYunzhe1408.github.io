@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Jonas Li: Forge The Future</title>
+    <title>Yunzhe Jonas Li: Forge The Future</title>
 
     <!-- Usual metadata. -->
     <meta charset="UTF-8" />
@@ -41,7 +41,7 @@
         <h1>Yunzhe "Jonas" Li</h1>
         <!-- <p>where I am affiliated with the <a href="https://msc.berkeley.edu/">Mechanical Systems Control Lab</a> to work on humanoid robot manipulation</p> -->
         <p>
-          I recently earned a master’s degree in the Department of EECS at <a href="https://eecs.berkeley.edu/">UC Berkeley</a>-<b style="color:#FDB515">Fiat Lux and Go Bears!</b> I am graciously to be an alumnus of both <a href="https://www.robomaster.com/en-US">RoboMaster</a> and <a href="https://www.firstinspires.org/">FIRST</a>, and affiliated with <a href="https://www.dji.com/">DJI</a> as an event technical executive.
+          I recently earned a master’s degree in the Department of EECS at <a href="https://eecs.berkeley.edu/">UC Berkeley</a>-<b style="color:#FDB515; background-color: #003262;">Fiat Lux and Go Bears!</b> I am graciously to be an alumnus of both <a href="https://www.robomaster.com/en-US">RoboMaster</a> and <a href="https://www.firstinspires.org/">FIRST</a>, and affiliated with <a href="https://www.dji.com/">DJI</a> as an event technical executive.
         </p>
         <p>
           Previously, I worked as a software engineer at <a href="https://www.momenta.cn/en/">Momenta</a>, contributing to the autopilot reversing feature for GM Cadillac LYRIQ. My work involved developing a stuck-state detection benchmark for reversing maneuvers, evaluating 800+ real parking test cases across 30+ garages, and optimizing SVM-based classification to reduce false positives by 15%.
@@ -421,8 +421,214 @@
             ? "Show older papers"
             : "Hide older papers";
         }
+
       </script>
     </section>
+
+        <section>
+      <h2>My Teams and Robots</h2>
+      <h3>Team Photos</h3>
+      <div class="carousel-container">
+        <div class="carousel-track" id="carousel-team"></div>
+      </div>
+
+      <h3>Robot Photos</h3>
+      <div class="carousel-container">
+        <div class="carousel-track" id="carousel-robot"></div>
+      </div>
+
+      <!-- Modal -->
+      <div id="imageModal" class="image-modal">
+        <div class="modal-content">
+          <span class="close-button" onclick="hideModal()">×</span>
+          <img id="modalImage" src="" alt="Large Robot Image" />
+          <div id="modalCaption" class="modal-caption"></div>
+        </div>
+      </div>
+
+
+      <script>
+        const teamTrack = document.getElementById('carousel-team');
+        const robotTrack = document.getElementById('carousel-robot');
+
+        const robotImages = [
+          {
+            src: "FTC2018.JPG",
+            caption: "FTC 2018 Qualifier <br/> @ SAS, Shanghai, China",
+            description: `
+              <strong>FTC 2018 - SAS Qualifier</strong>: Inspire Award achieved.<br/>
+              Coach: Joe Xu<br/>
+              Members: Yunzhe Jonas Li, Zheng Yuan, Jie Liu, Wen Wang, Haozhe Wang,<br/>
+              Jinqian Zhu, Yunyi Ye, Kewei Yin, Haojie Zhang, Sichen Wang, Yixin Wang, Chuheng Chen`,
+            type: "team"
+          },
+          {
+            src: "FTCWorld.jpg",
+            caption: "FRIST 2018 World Championships @ Detroit, MI, USA",
+            description: "Representing China.",
+            type: "team"
+          },
+          {
+            src: "FTCChina.JPG",
+            caption: "FIRST 2018 China Finals <br/> @ Suzhou, Jiangsu, China",
+            description: "I joined with Zheng Yuan, Jasper Liu, Ellen Wang to showcase at the stage of FIRST CHINA. At this tournament, we F.G. got the third Connect Award in the season.",
+            type: "team"
+          },
+          {
+            src: "FTC2019.JPG",
+            caption: "FTC 2019 Qualifier <br/> @ Shanghai, China",
+            description: "Mechanum drivetrain robot.",
+            type: "team"
+          },
+          {
+            src: "FTC2020.jpg",
+            caption: "FTC 2020 Off Season <br/> @ Shanghai, China",
+            description: "Designed for stacking challenge.",
+            type: "team"
+          },
+          {
+            src: "SRM2022.png",
+            caption: "RoboMaster 2022 <br/> @ Changzhou, Jiangsu, China",
+            description: "YOLO-powered targeting system.",
+            type: "team"
+          },
+          {
+            src: "SRM2023.jpg",
+            caption: "RoboMaster 2023 <br/> @ Shanghai, China",
+            description: "3rd place at Shanghai Regional.",
+            type: "team"
+          },
+          {
+            src: "SRM2023-2.jpg",
+            caption: "RoboMaster 2023 <br/> @ Shanghai University, China",
+            description: "Advanced gimbal control.",
+            type: "team"
+          },
+          {
+            src: "RM2024.jpg",
+            caption: "RM 2024",
+            description: "National Finals, high-accuracy firing.",
+            type: "team"
+          },
+          {
+            src: "R-2017.JPG",
+            caption: "Soccer Robot 2017",
+            description: " My very first robot.",
+            type: "robot"
+          },
+          {
+            src: "R-FTC2018.jpg",
+            caption: "FTC 2018",
+            description: " Build phase moments.",
+            type: "robot"
+          },
+          {
+            src: "R-FTC2019.jpg",
+            caption: "FTC 2019",
+            description: " Robot close-up.",
+            type: "robot"
+          },
+          {
+            src: "R-FTC2020.jpg",
+            caption: "FTC 2020",
+            description: " Arm + gripper test.",
+            type: "robot"
+          },
+          {
+            src: "R-FTC2021.jpg",
+            caption: "FTC 2021",
+            description: " Drive system rebuild.",
+            type: "robot"
+          },
+          {
+            src: "SRM-Engineer.jpg",
+            caption: "RoboMaster Engineer Robot",
+            description: " 5-axis robot for cube intake.",
+            type: "robot"
+          },
+          {
+            src: "SRM-HERO.jpg",
+            caption: "RoboMaster Hero Robot",
+            description: " Mobile offensive unit.",
+            type: "robot"
+          },
+          {
+            src: "SRM-Sentry.jpg",
+            caption: "RoboMaster Sentry Robot",
+            description: " Auto-tracking defender bot.",
+            type: "robot"
+          },
+          {
+            src: "SRM-Standard.jpg",
+            caption: "RoboMaster Standard Robot",
+            description: " Core RM battle robot.",
+            type: "robot"
+          },
+          {
+            src: "ALL.jpg",
+            caption: "All Robots Together",
+            description: " Team legacy.",
+            type: "robot"
+          }
+        ];
+
+
+        robotImages.forEach(img => {
+          const item = document.createElement('div');
+          item.className = 'carousel-item';
+          item.onclick = () => showModal(`./assets/robots/${img.src}`, img.description);
+          item.innerHTML = `
+            <img src="./assets/robots/${img.src}" alt="${img.caption}" />
+            <div class="caption">${img.caption}</div>
+          `;
+
+          if (img.type === "team") {
+            teamTrack.appendChild(item);
+          } else {
+            robotTrack.appendChild(item);
+          }
+        });
+        
+
+        function showModal(src, caption) {
+          const modal = document.getElementById('imageModal');
+          const modalImg = document.getElementById('modalImage');
+          const modalCaption = document.getElementById('modalCaption');
+          modalImg.src = src;
+          modalCaption.textContent = caption;
+          modalCaption.innerHTML = caption;
+          modal.style.display = 'flex';
+        }
+
+        // 隐藏模态框函数
+        function hideModal() {
+          document.getElementById('imageModal').style.display = 'none';
+        }
+        function cloneCarouselItems(containerId) {
+          const track = document.getElementById(containerId);
+          const items = Array.from(track.children);
+          items.forEach(item => {
+            const clone = item.cloneNode(true);
+            clone.classList.add('clone');
+            track.appendChild(clone);
+          });
+        }
+
+        // 在内容加载完后调用：
+        cloneCarouselItems('carousel-team');
+        cloneCarouselItems('carousel-robot');
+
+        // 新增点击背景区域关闭模态框逻辑
+        document.getElementById('imageModal').addEventListener('click', function (e) {
+          const modalContent = document.querySelector('.modal-content');
+          if (!modalContent.contains(e.target)) {
+            hideModal();
+          }
+        });
+      </script>
+    </section>
+
+
     <section>
       <h2>Service</h2>
       <h3>Community Services</h3>
@@ -448,49 +654,9 @@
       <p>[2018/04/28] <a href="https://theorangealliance.org/teams/14263?season_key=1718">Admission</a> at 2018 FIRST World Championship, Detroit</p>
       <p>[2018/03/25] Inspire Award at 2017-2018 FIRST Tech Challenge Shanghai American School Qualifier</p>
     </section>
-    <section>
-      <h2>My Teams and Robots</h2>
-      <div class="gallery">
-        <!-- Each image with onclick modal logic -->
-        <img src="./assets/robots/FTC2018.JPG" onclick="showModal('./assets/robots/FTC2018.JPG')" />
-        <img src="./assets/robots/FTCWorld.jpg" onclick="showModal('./assets/robots/FTCWorld.jpg')" />
-        <img src="./assets/robots/FTCChina.JPG" onclick="showModal('./assets/robots/FTCChina.JPG')" />
-        <img src="./assets/robots/FTC2019.JPG" onclick="showModal('./assets/robots/FTC2019.JPG')" />
-        <img src="./assets/robots/FTC2020.jpg" onclick="showModal('./assets/robots/FTC2020.jpg')" />
-        <img src="./assets/robots/SRM2022.png" onclick="showModal('./assets/robots/SRM2022.png')" />
-        <img src="./assets/robots/SRM2023.jpg" onclick="showModal('./assets/robots/SRM2023.jpg')" />
-        <img src="./assets/robots/SRM2023-2.jpg" onclick="showModal('./assets/robots/SRM2023-2.jpg')" />
-        <img src="./assets/robots/SRM2024.jpg" onclick="showModal('./assets/robots/SRM2024.jpg')" />
-        <img src="./assets/robots/RM2024.jpg" onclick="showModal('./assets/robots/RM2024.jpg')" />
-        <img src="./assets/robots/R-2017.JPG" onclick="showModal('./assets/robots/R-2017.JPG')" />
-        <img src="./assets/robots/R-FTC2018.jpg" onclick="showModal('./assets/robots/R-FTC2018.jpg')" />
-        <img src="./assets/robots/R-FTC2019.jpg" onclick="showModal('./assets/robots/R-FTC2019.jpg')" />
-        <img src="./assets/robots/R-FTC2020.jpg" onclick="showModal('./assets/robots/R-FTC2020.jpg')" />
-        <img src="./assets/robots/R-FTC2021.jpg" onclick="showModal('./assets/robots/R-FTC2021.jpg')" />
-        <img src="./assets/robots/SRM-Engineer.jpg" onclick="showModal('./assets/robots/SRM-Engineer.jpg')" />
-        <img src="./assets/robots/SRM-HERO.jpg" onclick="showModal('./assets/robots/SRM-HERO.jpg')" />
-        <img src="./assets/robots/SRM-Sentry.jpg" onclick="showModal('./assets/robots/SRM-Sentry.jpg')" />
-        <img src="./assets/robots/SRM-Standard.jpg" onclick="showModal('./assets/robots/SRM-Standard.jpg')" />
-        <img src="./assets/robots/ALL.jpg" onclick="showModal('./assets/robots/ALL.jpg')" />
-      </div>
-    
-      <div id="imageModal" class="image-modal" onclick="hideModal()">
-        <img id="modalImage" src="" alt="Modal Image" />
-      </div>
-      <script>
-        function showModal(src) {
-          const modal = document.getElementById('imageModal');
-          const modalImg = document.getElementById('modalImage');
-          modalImg.src = src;
-          modal.style.display = 'block';
-        }
-      
-        function hideModal() {
-          const modal = document.getElementById('imageModal');
-          modal.style.display = 'none';
-        }
-      </script>
-    </section>
+
+
+
     <section>
       <h2>Misc</h2>
       <p> I love walking by the ocean, soaking in the sea breeze, and watching the sunsets. The beaches in La Jolla and Berkeley always leave me feeling refreshed and inspiring.</p>
